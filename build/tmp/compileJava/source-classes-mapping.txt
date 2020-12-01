@@ -1,0 +1,2 @@
+com/imagine/LiersPoker/LiersPokerApplication.java
+ com.imagine.LiersPoker.LiersPokerApplication
