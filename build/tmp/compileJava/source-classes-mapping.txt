@@ -1,2 +1,18 @@
+com/imagine/LiersPoker/controller/PlayerController.java
+ com.imagine.LiersPoker.controller.PlayerController
+com/imagine/LiersPoker/models/Card.java
+ com.imagine.LiersPoker.models.Card
+com/imagine/LiersPoker/models/enums/HandType.java
+ com.imagine.LiersPoker.models.enums.HandType
+com/imagine/LiersPoker/models/GameSession.java
+ com.imagine.LiersPoker.models.GameSession
+com/imagine/LiersPoker/services/PlayerService.java
+ com.imagine.LiersPoker.services.PlayerService
+com/imagine/LiersPoker/models/enums/Suite.java
+ com.imagine.LiersPoker.models.enums.Suite
+com/imagine/LiersPoker/models/Player.java
+ com.imagine.LiersPoker.models.Player
+com/imagine/LiersPoker/models/Hand.java
+ com.imagine.LiersPoker.models.Hand
 com/imagine/LiersPoker/LiersPokerApplication.java
  com.imagine.LiersPoker.LiersPokerApplication
