@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/player")
-public class PlayerController {
+public class    PlayerController {
     /*
     raiseHand
     + updates games state after a player raises

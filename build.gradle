@@ -18,6 +18,8 @@ dependencies {
 	compile 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.3'
 
 
+
+
 	compile('org.springframework.boot:spring-boot-starter-web')
 
 	compile('org.springframework.boot:spring-boot-starter-websocket')
