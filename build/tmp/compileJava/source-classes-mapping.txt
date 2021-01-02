@@ -1,5 +1,5 @@
-com/imagine/LiersPoker/controller/PlayerController.java
- com.imagine.LiersPoker.controller.PlayerController
+com/imagine/LiersPoker/LiersPokerApplication.java
+ com.imagine.LiersPoker.LiersPokerApplication
 com/imagine/LiersPoker/models/Card.java
  com.imagine.LiersPoker.models.Card
 com/imagine/LiersPoker/models/enums/HandType.java
@@ -14,5 +14,7 @@ com/imagine/LiersPoker/models/Player.java
  com.imagine.LiersPoker.models.Player
 com/imagine/LiersPoker/models/Hand.java
  com.imagine.LiersPoker.models.Hand
-com/imagine/LiersPoker/LiersPokerApplication.java
- com.imagine.LiersPoker.LiersPokerApplication
+com/imagine/LiersPoker/controller/PlayerController.java
+ com.imagine.LiersPoker.controller.PlayerController
+com/imagine/LiersPoker/models/Tryout.java
+ com.imagine.LiersPoker.models.Tryout
