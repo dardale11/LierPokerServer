@@ -1,14 +1,20 @@
 package com.imagine.LiersPoker.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.imagine.LiersPoker.models.enums.Suite;
 
 public class Card implements Comparable {
+    @JsonProperty("rank")
     private Integer rank;
+    @JsonProperty("suite")
     private Suite suite;
+    @JsonProperty("img_path")
+    private String img_path;
 
-    public Card(Integer rank, Suite suite) {
+    public Card(Integer rank, Suite suite, String img_path) {
         this.rank = rank;
         this.suite = suite;
+        this.img_path = img_path;
     }
 
     public Integer getRank() {
@@ -25,6 +31,14 @@ public class Card implements Comparable {
 
     public void setSuite(Suite suite) {
         this.suite = suite;
+    }
+
+    public String getImg_path() {
+        return img_path;
+    }
+
+    public void setImg_path(String img_path) {
+        this.img_path = img_path;
     }
 
     @Override

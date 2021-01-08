@@ -1,10 +1,10 @@
 package com.imagine.LiersPoker.models.enums;
 
 public enum Suite {
-    CLUB("C"),
-    DIAMOND("D"),
-    HEART("H"),
-    SPADE("S");
+    C("CLUB"),
+    D("DIAMOND"),
+    H("HEART"),
+    S("SPADE");
 
     private String label;
 

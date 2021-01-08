@@ -1,8 +1,13 @@
 package com.imagine.LiersPoker.controller;
 
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.imagine.LiersPoker.models.Card;
 import com.imagine.LiersPoker.models.Hand;
 import com.imagine.LiersPoker.models.Tryout;
+import com.imagine.LiersPoker.services.PlayerService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +15,12 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/player")
 public class    PlayerController {
+    @Autowired
+    ObjectMapper objectMapper;
+
+    @Autowired
+    PlayerService playerService;
+
     /*
     raiseHand
     + updates games state after a player raises
@@ -19,9 +30,10 @@ public class    PlayerController {
      */
     @CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(value = "/raise", method = RequestMethod.POST)
-    public ResponseEntity<String> raiseHand(Tryout hand) {
-        System.out.println(hand);
-        return new ResponseEntity<>("dari", HttpStatus.OK);
+    public ResponseEntity<String> raiseHand(@RequestBody String handAsString) throws JsonProcessingException {
+        Hand hand = objectMapper.readValue(handAsString, Hand.class);
+        playerService.raiseHand(hand);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @RequestMapping(value = "", method = RequestMethod.GET)
