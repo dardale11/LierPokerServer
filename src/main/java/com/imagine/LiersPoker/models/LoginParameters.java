@@ -1,6 +1,13 @@
 package com.imagine.LiersPoker.models;
 
 public class LoginParameters {
+    @Override
+    public String toString() {
+        return "LoginParameters{" +
+                "RoomNumber=" + RoomNumber +
+                ", UserName='" + UserName + '\'' +
+                '}';
+    }
 
     private int RoomNumber;
     private String UserName;
